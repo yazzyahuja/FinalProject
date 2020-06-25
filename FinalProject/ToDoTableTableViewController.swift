@@ -11,24 +11,33 @@ import UIKit
 class ToDoTableTableViewController: UITableViewController {
 
     var toDos : [ToDoCD] = []
+    //var toDos : [ToDo] = []
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
-//    func createToDos() -> [ToDo]{
-//        let swift = ToDo()
-//        swift.name = "Learn Swift"
-//        swift.important = true
-//
-//        let dog = ToDo()
-//        dog.name = "Walk the Dog"
-//        // important is set to false by default
-//
-//        return [swift, dog]
-//    }
+
+    
+    
+    
+    
+    
+        func createToDos() -> [ToDo]{
+        let swift = ToDo()
+        swift.name = "Learn Swift"
+        swift.important = true
+
+        let dog = ToDo()
+        dog.name = "Walk the Dog"
+        // important is set to false by default
+
+        return [swift, dog]
+    }
+    
     
     
     
@@ -63,7 +72,8 @@ class ToDoTableTableViewController: UITableViewController {
       return cell
     }
     
-
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -100,11 +110,16 @@ class ToDoTableTableViewController: UITableViewController {
     */
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-      // this gives us a single ToDo
-      let toDo = toDos[indexPath.row]
-
-      performSegue(withIdentifier: "moveToComplete", sender: toDo)
+        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCell.AccessoryType.checkmark{
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
+        }
+        else{
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
+        }
+        // this gives us a single ToDo
+//        let toDo = toDos[indexPath.row]
+//
+//        performSegue(withIdentifier: "moveToComplete", sender: toDo)
     }
     
     // MARK: - Navigation
