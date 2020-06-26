@@ -12,7 +12,7 @@ class ToDoTableTableViewController: UITableViewController {
 
     var toDos : [ToDoCD] = []
     //var toDos : [ToDo] = []
-    
+    reuseIdentifier.textLabel.font = UIFont(name:"Avenir", size:22)
 
     
     override func viewDidLoad() {

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jgi-Qs-Kop">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjK-Ws-bR9">
+                                <rect key="frame" x="113" y="287" width="103" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Ally Checklist"/>
+                                <connections>
+                                    <segue destination="MUV-cU-zve" kind="show" id="BTE-eL-jJJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF7-9p-FMZ">
+                                <rect key="frame" x="98" y="406" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Allyship Dictionary"/>
+                                <connections>
+                                    <segue destination="Ueo-5b-S9U" kind="show" id="Yow-bN-lac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muP-CI-9aQ">
+                                <rect key="frame" x="96" y="529" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sustainable Brands"/>
+                                <connections>
+                                    <segue destination="OSH-Jn-PQv" kind="show" id="spS-VC-5St"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checklist" translatesAutoresizingMaskIntoConstraints="NO" id="h8U-mJ-2c0">
+                                <rect key="frame" x="20" y="266" width="68" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dictionary" translatesAutoresizingMaskIntoConstraints="NO" id="Dyo-aQ-lP3">
+                                <rect key="frame" x="20" y="387" width="68" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="business" translatesAutoresizingMaskIntoConstraints="NO" id="HYp-KO-GQU">
+                                <rect key="frame" x="20" y="510" width="68" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main icon" translatesAutoresizingMaskIntoConstraints="NO" id="H0l-wW-bNT">
+                                <rect key="frame" x="79" y="109" width="248" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OsW-49-6pX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.17391304347836" y="112.5"/>
+        </scene>
+        <!--Ally Checklist-->
+        <scene sceneID="ZsB-HD-jgl">
+            <objects>
+                <tableViewController id="MUV-cU-zve" customClass="ToDoTableTableViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d8G-KR-Ow9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="6hG-V1-fo4">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6hG-V1-fo4" id="LXO-JJ-j5d">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MUV-cU-zve" id="tjI-UM-ncG"/>
+                            <outlet property="delegate" destination="MUV-cU-zve" id="WHa-vD-k4p"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Ally Checklist" id="WMq-3p-TbQ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="VeP-Lv-Ofx">
+                            <connections>
+                                <segue destination="7qo-67-jrl" kind="show" id="dnZ-la-KIb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="LvO-gt-vaN" kind="show" identifier="moveToComplete" id="nei-P5-b43"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bX5-Ak-lJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2962.3188405797105" y="845.75892857142856"/>
+        </scene>
+        <!--Allyship Dictionary View Controller-->
+        <scene sceneID="5ec-lK-1m2">
+            <objects>
+                <viewController id="Ueo-5b-S9U" customClass="AllyshipDictionaryViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PRZ-io-Tfr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XiF-hq-d8m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Allyship Dictionary" id="BPq-Vh-5Fy">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="house.fill" catalog="system" id="C79-Gn-6Hz">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="2ze-om-T6L"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="prR-i5-fXk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a5I-FP-mgF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dt1-6C-7lu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.72463768115949" y="845.75892857142856"/>
+        </scene>
+        <!--Sustainable Brands View Controller-->
+        <scene sceneID="dpZ-XO-eTf">
+            <objects>
+                <viewController id="OSH-Jn-PQv" customClass="SustainableBrandsViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HO0-0H-Qlx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0q-04-BOh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Sustainable Brands" id="KUa-D5-O6F">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="house.fill" catalog="system" id="rQc-oZ-AYm">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="5lC-hZ-dfp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="84s-Q5-Hrn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bsZ-BS-Daq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLT-l4-h2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2210.144927536232" y="845.75892857142856"/>
+        </scene>
+        <!--Add To Do View Controller-->
+        <scene sceneID="wEM-es-AQC">
+            <objects>
+                <viewController id="7qo-67-jrl" customClass="AddToDoViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c1a-iV-fDu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrt-HY-uWQ">
+                                <rect key="frame" x="188" y="100" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="liu-aY-zwE">
+                                <rect key="frame" x="102" y="171" width="210" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fD-aw-ic0">
+                                <rect key="frame" x="167" y="295" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IB4-hq-rp1">
+                                <rect key="frame" x="183" y="346" width="50" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plr-Bb-a2K">
+                                <rect key="frame" x="193" y="467" width="28" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="7qo-67-jrl" eventType="touchUpInside" id="CLj-Su-nQT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H6h-5h-YaO" firstAttribute="trailing" secondItem="plr-Bb-a2K" secondAttribute="trailing" constant="193" id="23d-20-OD6"/>
+                            <constraint firstItem="IB4-hq-rp1" firstAttribute="leading" secondItem="H6h-5h-YaO" secondAttribute="leading" constant="183" id="4GH-iX-CUa"/>
+                            <constraint firstItem="Jrt-HY-uWQ" firstAttribute="leading" secondItem="H6h-5h-YaO" secondAttribute="leading" constant="188" id="8fR-7x-487"/>
+                            <constraint firstItem="2fD-aw-ic0" firstAttribute="top" secondItem="liu-aY-zwE" secondAttribute="bottom" constant="90" id="DxJ-GY-TBu"/>
+                            <constraint firstItem="H6h-5h-YaO" firstAttribute="trailing" secondItem="2fD-aw-ic0" secondAttribute="trailing" constant="167" id="JLc-ez-Krp"/>
+                            <constraint firstItem="plr-Bb-a2K" firstAttribute="leading" secondItem="H6h-5h-YaO" secondAttribute="leading" constant="193" id="MML-F4-S8T"/>
+                            <constraint firstItem="2fD-aw-ic0" firstAttribute="leading" secondItem="H6h-5h-YaO" secondAttribute="leading" constant="167" id="MhH-Iy-9cI"/>
+                            <constraint firstItem="H6h-5h-YaO" firstAttribute="trailing" secondItem="Jrt-HY-uWQ" secondAttribute="trailing" constant="188" id="OUb-Yg-lyl"/>
+                            <constraint firstItem="H6h-5h-YaO" firstAttribute="trailing" secondItem="liu-aY-zwE" secondAttribute="trailing" constant="102" id="Oic-2M-Ix9"/>
+                            <constraint firstItem="liu-aY-zwE" firstAttribute="leading" secondItem="H6h-5h-YaO" secondAttribute="leading" constant="102" id="Ovr-bM-cHW"/>
+                            <constraint firstItem="IB4-hq-rp1" firstAttribute="top" secondItem="2fD-aw-ic0" secondAttribute="bottom" constant="30" id="aS6-0I-M0s"/>
+                            <constraint firstItem="Jrt-HY-uWQ" firstAttribute="top" secondItem="H6h-5h-YaO" secondAttribute="top" constant="100" id="dLX-YN-qyw"/>
+                            <constraint firstItem="H6h-5h-YaO" firstAttribute="trailing" secondItem="IB4-hq-rp1" secondAttribute="trailing" constant="183" id="dNU-Jj-KaN"/>
+                            <constraint firstItem="plr-Bb-a2K" firstAttribute="top" secondItem="IB4-hq-rp1" secondAttribute="bottom" constant="90" id="ue1-5h-EU4"/>
+                            <constraint firstItem="liu-aY-zwE" firstAttribute="top" secondItem="Jrt-HY-uWQ" secondAttribute="bottom" constant="50" id="yuS-Fh-FIc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H6h-5h-YaO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f1Q-qs-Lfo"/>
+                    <connections>
+                        <outlet property="importantSwitch" destination="IB4-hq-rp1" id="0RG-nT-hEn"/>
+                        <outlet property="titleTextField" destination="liu-aY-zwE" id="UWI-H4-Bqh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8k-M3-Afs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1907" y="846"/>
+        </scene>
+        <!--Complete To Do View Controller-->
+        <scene sceneID="B7o-0u-LfE">
+            <objects>
+                <viewController id="LvO-gt-vaN" customClass="CompleteToDoViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMm-hE-8yk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qy-qZ-FTH">
+                                <rect key="frame" x="92" y="205" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJ8-Qu-NtY">
+                                <rect key="frame" x="158" y="338" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Complete"/>
+                                <connections>
+                                    <action selector="completeTapped:" destination="LvO-gt-vaN" eventType="touchUpInside" id="cA6-Aq-bL1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iWB-u8-c0I"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1xV-bL-7ky"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="2Qy-qZ-FTH" id="XYI-N4-tVU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fa4-ip-nK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2962" y="1619"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uyj-Ak-Wy0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jgi-Qs-Kop" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gRi-5t-arB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="78g-u5-el1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="phE-Uc-7ip"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Dk-3a-puZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="112.5"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5lC-hZ-dfp"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="business" width="840" height="554"/>
+        <image name="checklist" width="200" height="200"/>
+        <image name="dictionary" width="200" height="200"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="main icon" width="2224" height="1668"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
