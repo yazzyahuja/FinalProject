@@ -12,18 +12,15 @@ class ToDoTableTableViewController: UITableViewController {
 
     var toDos : [ToDoCD] = []
     //var toDos : [ToDo] = []
-    reuseIdentifier.textLabel.font = UIFont(name:"Avenir", size:22)
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tableView.backgroundColor = UIColor(red: 0.90, green: 0.51, blue: 0.54, alpha: 1.00)
+        tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        tableView.separatorColor = UIColor(red: 0.93, green: 0.28, blue: 0.33, alpha: 1.00)
     }
-    
-
-    
-    
-    
     
     
         func createToDos() -> [ToDo]{
@@ -67,6 +64,8 @@ class ToDoTableTableViewController: UITableViewController {
         } else {
             cell.textLabel?.text = toDo.name
         }
+        cell.backgroundColor = UIColor.clear
+        cell.textLabel?.textColor = UIColor.white
       }
 
       return cell
